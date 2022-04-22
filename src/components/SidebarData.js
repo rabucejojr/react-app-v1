@@ -2,6 +2,7 @@ import React from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
 import { RiDashboardLine } from 'react-icons/ri'
 import { IoIosPaper } from 'react-icons/io'
+import { BsFillCalendarCheckFill } from 'react-icons/bs'
 
 export const SidebarData = [
   {
@@ -11,8 +12,8 @@ export const SidebarData = [
     cName: 'nav-text',
   },
   {
-    title: 'Products',
-    path: '/products',
+    title: 'Dashboard',
+    path: '/dashboard',
     icon: <RiDashboardLine />,
     cName: 'nav-text',
   },
@@ -20,6 +21,12 @@ export const SidebarData = [
     title: 'Reports',
     path: '/reports',
     icon: <IoIosPaper />,
+    cName: 'nav-text',
+  },
+  {
+    title: 'Calendar',
+    path: '/calendar',
+    icon: <BsFillCalendarCheckFill />,
     cName: 'nav-text',
   },
 ]
