@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route path='/' component={Home}></Route>
           <Route path='/reports' component={Reports}></Route>
-          <Route path='/products' component={Dashboard}></Route>
           <Route path='/calendar' component={Calendar}></Route>
+          <Route path='/products' component={Dashboard}></Route>
         </Routes>
       </Router>
     </>

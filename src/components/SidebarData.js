@@ -18,15 +18,15 @@ export const SidebarData = [
     cName: 'nav-text',
   },
   {
-    title: 'Reports',
-    path: '/reports',
-    icon: <IoIosPaper />,
-    cName: 'nav-text',
-  },
-  {
     title: 'Calendar',
     path: '/calendar',
     icon: <BsFillCalendarCheckFill />,
+    cName: 'nav-text',
+  },
+  {
+    title: 'Reports',
+    path: '/reports',
+    icon: <IoIosPaper />,
     cName: 'nav-text',
   },
 ]
