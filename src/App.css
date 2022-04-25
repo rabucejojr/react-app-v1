@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@100&display=swap');
 
-*{
+* {
   font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
-.home, .reports, .products{
-  display:flex;
+.home,
+.reports,
+.products {
+  display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;;
+  font-size: 3rem;
 }
