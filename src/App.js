@@ -1,11 +1,10 @@
 import React from 'react'
 import './App.css'
-import {Calendar} from './components/Calendars'
+import Forms from './pages/Forms'
 function App() {
   return (
     <>
-    {/* <Navbar/> */}
-    <Calendar/>
+    <Forms/>
     </>
   )
 }
