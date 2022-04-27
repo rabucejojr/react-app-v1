@@ -7,6 +7,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    height: '100vh',
   },
   TextInput: {
     width: 400,
