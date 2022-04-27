@@ -1,5 +1,24 @@
 import React from 'react'
-import { PasswordInput, TextInput, createStyles, Button } from '@mantine/core'
+import {
+  PasswordInput,
+  TextInput,
+  createStyles,
+  Button,
+  Table,
+} from '@mantine/core'
+
+const elements = [
+  { name: 'asdasd', password: '123456' },
+  { name: 'fhfghfgh', password: '2424' },
+  { name: 'sdfsdfsdg', password: '45453' },
+  { name: 'gdfgdfgdfg', password: '564545' },
+]
+const rows = elements.map((element) => (
+  <tr key={element.name}>
+    <td>{element.name}</td>
+    <td>{element.password}</td>
+  </tr>
+))
 
 const useStyles = createStyles((theme) => ({
   div: {
@@ -7,7 +26,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh',
+    // height: '100vh',
   },
   TextInput: {
     width: 400,
@@ -19,6 +38,12 @@ const useStyles = createStyles((theme) => ({
   },
   Button: {
     margin: '10px',
+  },
+  Table: {
+    paddingTop: '10px',
+    width: 200,
+    justifyContent: 'center',
+    textAlign: 'center',
   },
 }))
 
@@ -76,6 +101,25 @@ function Forms() {
             Delete
           </Button>
         </section>
+        {/* Table */}
+        <div>
+          <section>
+            <Table
+              verticalSpacing='md'
+              highlightOnHover
+              horizontalSpacing='md'
+              className={classes.Table}
+            >
+              <thead>
+                <tr>
+                  <th>NAME</th>
+                  <th>PASSWORD</th>
+                </tr>
+              </thead>
+              <tbody>{rows}</tbody>
+            </Table>
+          </section>
+        </div>
       </div>
     </>
   )
