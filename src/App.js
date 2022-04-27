@@ -1,12 +1,11 @@
 import React from 'react'
 import './App.css'
-
+import {Calendar} from './components/Calendars'
 function App() {
   return (
     <>
-    <div>
-      <h1>Roger Abucejo</h1>
-    </div>
+    {/* <Navbar/> */}
+    <Calendar/>
     </>
   )
 }
