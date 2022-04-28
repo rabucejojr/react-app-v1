@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   PasswordInput,
   TextInput,
@@ -48,6 +48,8 @@ const useStyles = createStyles((theme) => ({
 }))
 
 function Forms() {
+  const [input, setInput] = useState('')
+
   const { classes } = useStyles()
   return (
     <>
