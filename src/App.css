@@ -6,12 +6,3 @@
   margin: 0;
   padding: 0;
 }
-.home,
-.reports,
-.products {
-  display: block;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
